@@ -10,7 +10,7 @@ class ConditionTest extends TestCase
 {
     protected $testResource = null;
 
-    public function setup()
+    public function setUp(): void
     {
         $this->testResource = Resource::adhoc('thing', [
             'id' => '123',
